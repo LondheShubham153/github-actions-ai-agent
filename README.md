@@ -186,6 +186,7 @@ tests/       offline tests (no keys)
 evals/       end-to-end evals against the dev server
 scripts/     screenshot, banner and card generators
 assets/      banner, stack cards, screenshots
+CLAUDE.md    context for AI coding assistants: rules, gotchas, how to recreate this repo
 ```
 
 ## Tests and evals
