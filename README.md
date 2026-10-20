@@ -107,14 +107,18 @@ and a profile. [Demo 4](demos/04_tenant_isolation.py) shows that one user's memo
 <img src="assets/screenshots/06-demo-memory.png" alt="Memory demo output" width="100%">
 <img src="assets/screenshots/07-demo-isolation.png" alt="Tenant isolation demo output" width="100%">
 
-Supermemory's own view of the same data, the memory graph in its console:
+Supermemory's own view of the same data, the memory graph in its console. Squares are documents, rings are the memories
+extracted from them:
 
-<img src="assets/screenshots/supermemory-graph-memories.png" alt="Supermemory memory graph showing documents linked to extracted memories" width="100%">
+<img src="assets/screenshots/supermemory-graph-memories.png" alt="Supermemory memory graph with a document selected, showing the conversation turn and its 4 extracted memories" width="100%">
 
-<p>
-  <img src="assets/screenshots/supermemory-graph-profile.png" alt="Placeholder: Supermemory user profile" width="49%">
-  <img src="assets/screenshots/supermemory-graph-isolation.png" alt="Placeholder: two Supermemory namespaces with no overlap" width="49%">
-</p>
+Zoomed out, the whole workspace. Each cluster is a document with the memories Supermemory pulled out of it:
+
+<img src="assets/screenshots/supermemory-graph-overview.png" alt="Supermemory memory graph zoomed out, showing many documents and memories" width="100%">
+
+Select a memory to see its versions and the documents it links back to:
+
+<img src="assets/screenshots/supermemory-graph-memory-versions.png" alt="A selected memory in the Supermemory graph showing its version history and links to source documents" width="100%">
 
 ### Replay, and why changing workflow code is risky
 

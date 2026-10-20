@@ -32,4 +32,3 @@ testpaths = ["tests"]
 [tool.ruff.lint.per-file-ignores]
 "scripts/make_cards.py" = ["E501"]  # long SVG strings
 "scripts/render_terminal.py" = ["E501"]  # HTML template
-"scripts/make_placeholders.py" = ["E501"]  # SVG strings
