@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="160" viewBox="0 0 400 160" role="img" aria-label="Gemma 4 on Ollama: the brain">
+  <rect x="1" y="1" width="398" height="158" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  <rect x="1" y="1" width="8" height="158" rx="4" fill="#38bdf8"/>
+  <text x="28" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#38bdf8">THE BRAIN</text>
+  <text x="28" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#f8fafc">Gemma 4 on Ollama</text>
+  <text x="28" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#cbd5e1">Local 8B model with native tool</text>
+  <text x="28" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#cbd5e1">calling and thinking. No API key.</text>
+</svg>

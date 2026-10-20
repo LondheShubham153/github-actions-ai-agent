@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+# Offline checks only: no model, no keys, no Temporal server. The evals and demos need Ollama and Supermemory,
+# so they are run by hand (see docs/results.md).
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run pytest -q
+      - name: Import check (catches broken pins)
+        run: uv run python -W ignore -c "import workflow, worker, ask; print('imports ok')"

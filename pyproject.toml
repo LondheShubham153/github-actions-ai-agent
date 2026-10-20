@@ -1,0 +1,35 @@
+[project]
+name = "github-actions-ai-agent"
+version = "0.1.0"
+description = "A durable, memory-equipped agent that triages failed GitHub Actions runs (Gemma 4 on Ollama, Google ADK, Supermemory, Temporal)."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+dependencies = [
+    "temporalio[google-adk]==1.34.0",
+    "google-adk[extensions]==2.12.0",
+    "litellm==1.100.0",
+    "supermemory==5.0.0",
+    "httpx==0.28.1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/make_cards.py" = ["E501"]  # long SVG strings
+"scripts/render_terminal.py" = ["E501"]  # HTML template
+"scripts/make_placeholders.py" = ["E501"]  # SVG strings
