@@ -21,6 +21,8 @@ It is also a **teaching repo**. The agent is about 250 lines, and every moving p
 how Temporal makes an agent crash-safe, how memory works, and how to keep an agent read-only and safe with untrusted
 input. Start with [Learn the concepts](#learn-the-concepts).
 
+**Video walkthrough:** [Watch the project explanation on YouTube](https://youtu.be/XpGlLdJNz7Y).
+
 ## The stack
 
 <table>
